@@ -10,6 +10,23 @@ for the subscriptions service :
 
 for the auth service it will create a table on application level.
 
+uses uvicorn :
+
+``` 
+cd subscriptions
+
+uvicorn main:app --host localhost --port 8080
+```
+
+
+```
+
+cd auth
+
+uvicorn main:app
+
+````
+
 ### PLEASE NOTE:
 
 1. uses hardcoded subscription plans, uses directories for deciding
