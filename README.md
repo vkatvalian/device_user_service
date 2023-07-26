@@ -34,3 +34,5 @@ uvicorn main:app
 3. hardcoded sql queries but works as a showcase of using ORM and raw sql queries + needs to get data through the loop but uses hardcoded indexing
 4. all connection/engine parts are global but needs to be wrapped and needs to have a session for the better queries, session management etc
 5. several things are broken, f.e. will add several list of users inside the sub_plan table but didn't have time to fix that bug. But it should have NOT NULL fields and needs to use UPDATE when there are already rows for that subscriptions.
+6. on production will use another methods for the proxy instead of httpx and hardcoded urls
+7. hardcoded urls for the database connections as well, needs to be inside .env variables
