@@ -3,7 +3,7 @@ import os
 from sqlalchemy import (Column, Integer, MetaData, String, Table,
                         create_engine)
 
-DATABASE_URI = "postgresql://picverse:fedidb@localhost:5432/fedidb?sslmode=disable"
+DATABASE_URI = ""
 
 metadata = MetaData()
 
